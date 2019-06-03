@@ -160,19 +160,23 @@
     overflow: hidden;
 }
 
-.square8:hover {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    background-color: blue;
-    border: 3px solid red;
-    transition: 3s;
+.square8:hover ~ .blackout {
+    background-color: black;
+    z-index: 5;
 }
 
-@keyframes blackout {
-    * {background-color: black;}
-    }
+.blackout  {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .25s;
+    /* pointer-events: none; */
+
+}
+
 
 .square9 {
     display: inline-block;
