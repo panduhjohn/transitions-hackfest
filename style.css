@@ -1,8 +1,193 @@
-.square {
+/* background color */
+
+
+.square1 {
     display: inline-block;
     width: 100px;
     height: 100px;
-    margin: -3px;
+    margin: 5px;
+    background-color: white;
+    border: 3px solid red;
+    transition: all 3s;
+}
+
+.square1:hover{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: red;
+    border: 3px solid black;
+    transition: all 2.5s;
+}
+
+
+/* shrink */
+.square2 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
     background-color: blue;
     border: 3px solid red;
+    transition: 3s;
+
 }
+.square2:hover{
+    display: inline-block;
+    /* width: 10px;
+    height: 10px; */
+    margin: 5px;
+    background-color: blue;
+    border: 3px solid red;
+    transition: 2s;
+    transform: scale(0.5);
+
+}
+
+/* invisible */
+.square3 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: blue;
+    border: 3px solid red;
+    transition: 3s;
+    opacity: 0;
+}
+
+.square3:hover {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: blue;
+    border: 3px solid red;
+    transition: 3s;
+    opacity: 1;
+}
+/* rotate */
+.square4 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: blue;
+    border: 3px solid red;
+    transition: 3s;
+}
+.square4:hover{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: blue;
+    border: 3px solid red;
+    transition: 3s;
+}
+
+/* blow up */
+.square5 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: blue;
+    border: 3px solid red;
+    transition: all 3s;
+}
+.square5:hover{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: blue;
+    border: 3px solid red;
+    transform: rotate(900deg) scale(3.5);
+    /* transform: rotateZ(900deg); */
+    /* transform: rotateY(900deg); */
+
+}
+
+.square6 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: blue;
+    border: 3px solid red;
+    transition: all 1s;
+}
+
+.square6:hover {
+    /* transform: skew(30deg); */
+    transform: skewX(180deg);
+}
+
+.square7 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: blue;
+    border: 3px solid red;
+    transition: 3s;
+}
+
+.square7:hover {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    animation: disco 10ms infinite;
+}
+
+@keyframes disco {
+    from {background-color: black;}
+      to {background-color: white;}
+    }
+
+.square8 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: blue;
+    border: 3px solid red;
+    transition: 3s;
+    overflow: hidden;
+}
+
+.square8:hover {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: blue;
+    border: 3px solid red;
+    transition: 3s;
+}
+
+@keyframes blackout {
+    * {background-color: black;}
+    }
+
+.square9 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: blue;
+    border: 3px solid red;
+    transition: 2s;
+}
+.square9:hover{
+    transform: rotate(1080deg);
+    transition: 8s;
+
+    
+}
+
+
